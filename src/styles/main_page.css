@@ -1,0 +1,96 @@
+#main_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#main_content > div:first-child{
+    flex: 1;
+}
+.main_photo {
+    flex: 3;
+    width: 57%;
+    overflow: hidden;
+    background-image: url("https://i.pinimg.com/originals/26/e8/89/26e889d913e1dbed6a12d383b554d091.jpg");
+    background-size: 100%;
+
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main_photo > div {
+    width:50%;
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.main_photo span{
+    color: greenyellow;
+}
+.main_photo  h1 {
+    font-size: 70px;
+    margin: 0px;
+    font-family: "Brush Script MT";
+}
+.main_photo  p{
+    margin: 0;
+    font-size: 30px;
+}
+.main_photo button{
+    background: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+.main_photo button:hover {
+    background: rgba(255,255,255,0.1);
+}
+.main_photo button:active{
+    background: rgba(255,255,255,0.3);
+}
+.main_photo hr{
+    width: 90%;
+}
+.order_element{
+    background: white;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.order_element p, .order_element h2{
+    margin: 0;
+}
+.order_element > p{
+    font-size: 15px;
+}
+.order_element > button:active{
+    color: dimgray;
+    background: rgba(0,0,0,0.01);
+    border-radius: 5px ;
+}
+.order_element > button{
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+}
+.order_element:nth-child(2){
+    margin: 5px 10px 5px 0px;
+
+}
+@media (min-width: 1200px) {
+    #main_content{
+        margin: 20px 12%;
+    }
+}
