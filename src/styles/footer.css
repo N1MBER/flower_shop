@@ -1,0 +1,70 @@
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin: 2px;
+}
+#footer a:hover{
+    color: gray;
+}
+#footer p, #footer li{
+    font-size: 13px;
+}
+#footer > div:first-child {
+    padding: 20px 0;
+    background: rgb(220,220,220);
+}
+.footer_content h3{
+    font-size: 15px;
+}
+.user_info form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.user_info form input,.user_info form button{
+    background: white;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+.user_info form button{
+    font-weight: bold;
+    width: 240px;
+    border: none;
+    color: white;
+    background: rgb(94,163,108);
+}
+.user_info form button:active{
+    background: forestgreen;
+}
+.user_info form input:focus{
+    outline: none;
+}
+.footer_content >div, .footer_content >div > div{
+    display: flex;
+    flex-direction: column;
+}
+#footer >div:last-child > img{
+    width: 200px ;
+}
+#footer >div:last-child{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width: 1200px) {
+    #footer > div:last-child, .footer_content{
+        margin: 0px 12%;
+    }
+}

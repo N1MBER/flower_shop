@@ -19,7 +19,7 @@ export class NavBar extends React.Component{
                         </button>
                         )})}
                     <button className={"navigation_item"}>
-                        <img alt={""} src={"https://i.dlpng.com/static/png/1260891-png-file-cart-png-981_886_preview.png"}/>
+                        <img alt={""} src={"https://image.flaticon.com/icons/png/512/34/34627.png"}/>
                         <p>Корзина</p>
                     </button>
                 </nav>

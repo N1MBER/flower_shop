@@ -1,21 +1,11 @@
 import React from "react";
+import {AuthorizationComponent} from "../components/AuthorizationComponent";
 
 export class Header extends React.Component{
     render() {
         return(
             <header id={"header"}>
-                <div>
-                    <div className={"header_icons"}>
-                        <img className={"header_login_icon"} src={"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"} alt={"facebook"}/>
-                        <img className={"header_login_icon"} src={"https://cdn.worldvectorlogo.com/logos/vk-1.svg"} alt={"vk"}/>
-                        <img className={"header_login_icon"} src={"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"} alt={"inst"}/>
-                    </div>
-                    <div className={"header_buttons"}>
-                        <button>Вход</button>
-                        |
-                        <button>Регистрация</button>
-                    </div>
-                </div>
+                <AuthorizationComponent/>
                 <div className={"header_content"}>
                     <div>
                         <img className={"header_content_icon"} src={"https://i.pinimg.com/originals/20/27/3c/20273cfda041b47e89e057a4c2296928.png"} alt={""}/>
