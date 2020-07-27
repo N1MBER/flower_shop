@@ -1,9 +1,9 @@
 import React from "react";
 
 let orders =[
-    ["ЗАКАЖИТЕ", "ЦВЕТЫ", "Купите любимым"],
-    ["ЗАКАЖИТЕ", "НАБОР", "Сделать подарок"],
-    ["ПОСМОТРИТЕ", "ГАЛЕРЕЯ", "Просмотреть портфолио"]
+    ["ЗАКАЖИТЕ", "ЦВЕТЫ", "Купите любимым", "/products/flowers/"],
+    ["ЗАКАЖИТЕ", "НАБОР", "Сделать подарок", "/products/set/"],
+    ["ПОСМОТРИТЕ", "ГАЛЕРЕЯ", "Просмотреть портфолио","https://github.com/N1MBER"]
 ];
 let links = ["/products/flowers", "/products/set", "https://github.com/N1MBER"];
 
@@ -18,7 +18,7 @@ export class MainPage extends React.Component{
                                 <p>{item[0]}</p>
                                 <h2>{item[1]}</h2>
                                 :::::::::::::::::::::
-                                <button>
+                                <button onClick={() => window.location.href = item[3]}>
                                     <p>{item[2]}</p>
                                     <img width={30} alt={""} src={"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Circle_arrow_right_font_awesome.svg/768px-Circle_arrow_right_font_awesome.svg.png"}/>
                                 </button>
@@ -32,7 +32,7 @@ export class MainPage extends React.Component{
                         <hr/>
                         <p>100% Гарантия</p>
                         <hr/>
-                        <button>Заказать сейчас ></button>
+                        <button onClick={() => window.location.href = "/products/flowers/"}>Заказать сейчас ></button>
                     </div>
                 </div>
             </div>

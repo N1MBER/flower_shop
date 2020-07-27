@@ -2,6 +2,8 @@
 @import "footer.css";
 @import "main_page.css";
 @import "contacts.css";
+@import "products.css";
+@import "product_item.css";
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

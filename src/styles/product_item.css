@@ -1,0 +1,34 @@
+#product_item{
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product_item_content{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#product_item>div{
+    flex: 1;
+}
+#product_item > div >img{
+    height: 300px;
+    width: 300px;
+}
+.product_item_content > button{
+    background: none;
+    font-size: 18px;
+    padding: 3px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+}
+.product_item_content > button:active{
+    color: dimgray;
+    border: 2px solid dimgray;
+}

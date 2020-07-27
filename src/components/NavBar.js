@@ -7,6 +7,14 @@ let pages = [
     "Акссесуары",
     "Контакты"
 ];
+let links = [
+    "/",
+    "/products/flowers/",
+    "/products/set/",
+    "/products/accessories/",
+    "/contacts/"
+
+];
 export class NavBar extends React.Component{
     render() {
         return(
@@ -14,7 +22,7 @@ export class NavBar extends React.Component{
                 <nav>
                     {pages.map(function (item) {
                         return(
-                        <button className={"navigation_item"}>
+                        <button onClick={()=>{window.location.href = links[pages.indexOf(item)]}} className={"navigation_item"}>
                             <p>{item}</p>
                         </button>
                         )})}
