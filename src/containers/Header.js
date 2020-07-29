@@ -1,11 +1,11 @@
 import React from "react";
-import {AuthorizationComponent} from "../components/AuthorizationComponent";
+import {AuthorizationHeader} from "../components/AuthorizationHeader";
 
 export class Header extends React.Component{
     render() {
         return(
             <header id={"header"}>
-                <AuthorizationComponent/>
+                <AuthorizationHeader/>
                 <div className={"header_content"}>
                     <div>
                         <img className={"header_content_icon"} src={"https://i.pinimg.com/originals/20/27/3c/20273cfda041b47e89e057a4c2296928.png"} alt={""}/>

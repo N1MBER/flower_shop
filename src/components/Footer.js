@@ -11,7 +11,7 @@ export class Footer extends React.Component{
                             <div>
                                 <a href={"/contacts/"}>О нас</a>
                                 <a href={"/contacts/"}>Контакты</a>
-                                <a>Политика конфидициальности</a>
+                                <a href={"https://github.com/N1MBER"}>Политика конфидициальности</a>
                                 <a href={"https://github.com/N1MBER"}>Разработчик</a>
                                 <a href={"https://github.com/N1MBER"}>FAQ</a>
                             </div>
@@ -19,9 +19,9 @@ export class Footer extends React.Component{
                         <div>
                             <h3>Товары</h3>
                             <div>
-                                <a href={"/products/flowers"}>Цветы</a>
-                                <a href={"/products/set"}>Наборы</a>
-                                <a href={"/products/accessories"}>Акссесуары</a>
+                                <a href={"/products/flowers/"}>Цветы</a>
+                                <a href={"/products/set/"}>Наборы</a>
+                                <a href={"/products/accessories/"}>Акссесуары</a>
                                 <a href={"https://github.com/N1MBER"}>Предложения</a>
                             </div>
                         </div>

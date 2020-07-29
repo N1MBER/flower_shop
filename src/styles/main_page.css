@@ -55,6 +55,10 @@
 .main_photo hr{
     width: 90%;
 }
+.order_element:hover{
+    background: rgb(220,220,220);
+    border: 1px solid rgb(200,200,200);
+}
 .order_element{
     background: white;
     margin-right: 10px;
@@ -89,8 +93,24 @@
     margin: 5px 10px 5px 0px;
 
 }
+#not_found{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#not_found > h1{
+    font-size: 70px;
+    color: dimgrey;
+    margin: 0;
+}
+#not_found > p,#not_found > h3{
+    color: grey;
+    padding: 0;
+}
 @media (min-width: 1200px) {
-    #main_content{
+    #main_content, #cart,#not_found{
         margin: 20px 12%;
     }
 }

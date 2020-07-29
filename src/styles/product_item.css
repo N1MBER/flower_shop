@@ -12,8 +12,11 @@
     justify-content: space-between;
     flex-direction: column;
 }
-#product_item>div{
-    flex: 1;
+#product_item>div:first-child{
+    flex: 2;
+}
+#product_item>div:last-child{
+    flex: 3;
 }
 #product_item > div >img{
     height: 300px;

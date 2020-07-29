@@ -4,6 +4,8 @@
 @import "contacts.css";
 @import "products.css";
 @import "product_item.css";
+@import "registration_component.css";
+@import "cart.css";
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

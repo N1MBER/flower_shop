@@ -2,10 +2,12 @@ import React from "react";
 import {
     BrowserRouter,
     Route,
-    Switch
+    Switch,
+    Redirect
 }from 'react-router-dom'
 import {ProductList} from "../components/ProductList";
 import {ProductItem} from "../components/ProductItem";
+import NotFoundPage from "../components/NotFoundPage";
 
 export class Products extends React.Component{
     constructor(props){
@@ -21,6 +23,8 @@ export class Products extends React.Component{
                 return "Цветы";
             case "accessories":
                 return "Акссесуары";
+            default:
+                return "Цветы";
         }
     }
     render() {
@@ -29,8 +33,12 @@ export class Products extends React.Component{
                 <h1 className={"title"}>{this.this_page()}</h1>
                 <BrowserRouter>
                     <Switch>
+                        {window.location.pathname.split("/").length < 4?
+                            window.location.href = window.location.pathname + "flowers/":undefined
+                        }
                         <Route exact strict path={"/products/*/"} component={ProductList}/>
                         <Route exact path={"/products/*/:id"} component={ProductItem}/>
+                        <Route component={NotFoundPage}/>
                     </Switch>
                 </BrowserRouter>
             </div>

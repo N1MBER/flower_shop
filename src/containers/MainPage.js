@@ -5,7 +5,6 @@ let orders =[
     ["ЗАКАЖИТЕ", "НАБОР", "Сделать подарок", "/products/set/"],
     ["ПОСМОТРИТЕ", "ГАЛЕРЕЯ", "Просмотреть портфолио","https://github.com/N1MBER"]
 ];
-let links = ["/products/flowers", "/products/set", "https://github.com/N1MBER"];
 
 export class MainPage extends React.Component{
     render() {
@@ -14,7 +13,7 @@ export class MainPage extends React.Component{
                 <div>
                     {orders.map(function (item) {
                         return (
-                            <div className={"order_element"}>
+                            <div onClick={() => window.location.href = item[3]} className={"order_element"}>
                                 <p>{item[0]}</p>
                                 <h2>{item[1]}</h2>
                                 :::::::::::::::::::::
