@@ -14,9 +14,13 @@ body {
   margin: 0;
   color: black;
   background: rgb(240,240,240);
-  font-family: "Avenir";
+  font-family: Avenir;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+a,p{  font-family: Arial;
+
+
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

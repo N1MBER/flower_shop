@@ -34,7 +34,10 @@ export class ProductList extends React.Component{
                                     <p>{item[2]} руб.</p>
                                     <button onClick={() =>
                                     {
-                                        window.location.href = "/cart/"
+                                        if (localStorage.getItem("cart_item") == null)
+                                            localStorage.setItem("cart_item", item + ";");
+                                        else
+                                            localStorage.setItem("cart_item",localStorage.getItem("cart_item") + item + ";");
                                     }
                                     }>Заказать</button>
                                 </div>

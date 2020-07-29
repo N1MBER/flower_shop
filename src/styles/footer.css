@@ -68,3 +68,9 @@
         margin: 0px 12%;
     }
 }
+@media (min-width: 500px) and (max-width: 799px) {
+    .footer_content{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

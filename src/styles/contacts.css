@@ -18,3 +18,41 @@
     margin-right: 12%;
     justify-content: center;
 }
+@media (min-width: 800px) and (max-width: 1199px) {
+    #contacts{
+        flex-direction: column;
+    }
+    #contacts>div:last-child{
+        width: 90%;
+    }
+    .contacts_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .contacts_info >p{
+        margin-left: 30px;
+    }
+}
+@media (min-width: 500px) and (max-width: 799px) {
+    #contacts{
+        flex-direction: column;
+    }
+    #contacts > div:first-child{
+        flex: 3
+    }
+    #contacts>div:last-child{
+        margin: 0 0 0 5%;
+        width: 90%;
+    }
+    .contacts_info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .contacts_info >p{
+        margin-left: 30px;
+    }
+}
+

@@ -110,7 +110,24 @@
     padding: 0;
 }
 @media (min-width: 1200px) {
-    #main_content, #cart,#not_found{
+    #main_content, #cart,#not_found,#products{
         margin: 20px 12%;
+    }
+}
+@media (min-width: 500px) and (max-width: 799px){
+    #main_content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #not_found > h1{
+        text-align: center;
+    }
+    .main_photo{
+        width: 100%;
+        justify-content: center;
+    }
+    .main_photo > div{
+        width: 80%;
+        margin: 40px 0;
     }
 }

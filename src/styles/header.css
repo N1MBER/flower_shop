@@ -66,6 +66,7 @@
 }
 .header_content > div{
     display: flex;
+    font-family:  Avenir;
     align-items: center;
     flex-direction: row;
 }
@@ -150,3 +151,12 @@
         align-self: flex-end;
     }
 }
+@media (min-width: 500px) and (max-width: 799px) {
+    .header_content >div:first-child{
+        display: none;
+    }
+    #navigation>nav{
+        flex-wrap: wrap;
+    }
+}
+

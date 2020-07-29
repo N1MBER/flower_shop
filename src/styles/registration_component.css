@@ -40,3 +40,10 @@
         margin: 0 12%;
     }
 }
+@media (min-width: 200px) and (max-width: 1199px) {
+    #registration{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

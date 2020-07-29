@@ -28,7 +28,7 @@ export class Contacts extends React.Component{
                         <h1>Наши контакты</h1>
                         {information.map(function (item) {
                             return(
-                                <div>
+                                <div className={"contacts_info"}>
                                     <h3>{item[0]}</h3>
                                     <p>{item[1]}</p>
                                 </div>
