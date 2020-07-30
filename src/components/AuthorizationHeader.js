@@ -45,7 +45,6 @@ export class AuthorizationHeader extends React.Component{
             fetch(apiURL + login, {
                 method: 'POST',
                 headers: header,
-                body: JSON.stringify(user_info)
             }).then(response => {
                 if (response.status === 200) {
                     localStorage.setItem("login", this.state.login_value);
@@ -61,7 +60,7 @@ export class AuthorizationHeader extends React.Component{
                 }
             }).catch(response => {
                 this.setState({message: "Произошла ошибка"});
-                localStorage.setItem("authorized", "false");
+                this.setAuthorized(false);
                 console.log(response)
             });
         }else {
@@ -102,7 +101,7 @@ export class AuthorizationHeader extends React.Component{
                     (
                         <div>
                             <div>
-                                <input className={"header_input_field"} onChange={this.setLoginValue} id={"header_login"} type={"text"} placeholder={"Логин"}/>
+                                <input className={"header_input_field"} onChange={this.setLoginValue} id={"header_login"} type={"email"} placeholder={"Логин"}/>
                                 <input className={"header_input_field"} onChange={this.setPasswordValue} type={"password"} placeholder={"Пароль"}/>
                                 <button className={"header_button"} onClick={()=>{this.authorization()
                                 }}>Войти</button>
