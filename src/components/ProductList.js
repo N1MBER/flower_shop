@@ -14,7 +14,8 @@ export class ProductList extends React.Component{
             case "/products/accessories/":
                 return items[2];
             default:
-                return items[0];
+                window.location.href = "/not_found/";
+                // return items[0];
         }
     }
     render() {

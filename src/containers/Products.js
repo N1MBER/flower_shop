@@ -34,7 +34,7 @@ export class Products extends React.Component{
                 <BrowserRouter>
                     <Switch>
                         {window.location.pathname.split("/").length < 4?
-                            window.location.href = window.location.pathname + "flowers/":undefined
+                            window.location.href = "/products/flowers/":undefined
                         }
                         <Route exact strict path={"/products/*/"} component={ProductList}/>
                         <Route exact path={"/products/*/:id"} component={ProductItem}/>
